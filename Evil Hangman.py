@@ -1,7 +1,7 @@
 
 from random import randint
 from random import choice
-from itertools import product
+
 DEBUG = False
 
 def Play_Game():
