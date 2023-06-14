@@ -278,7 +278,7 @@ def Play_Round(dictionary, num_guesses, current_hint, remaining_characters):
          print ('\nThe letter {} is in the word!'.format(guess))
       if not ((num_guesses - current_incorrect_guesses) > 0 or num_guesses == -1):
          print('You Have Lost The Game')
-         fake_answer = randint(1,len(dictionary))
+         fake_answer = randint(0,len(dictionary))
          print('The correct word was {}'.format(dictionary[fake_answer]))
          round_over = True
       elif remaining_characters == 0:
